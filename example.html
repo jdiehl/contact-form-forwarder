@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form Forwarder Example Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Contact Form Forwarder Example Form
+      </h1>
+      <form action="http://localhost:3000" method="post">
+        <div class="field">
+          <label class="label">Your Name</label>
+          <div class="control">
+            <input name="Name" class="input" type="text" placeholder="Please enter your name">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Your Email Address</label>
+          <div class="control">
+            <input name="Email" class="input" type="email" placeholder="Please enter your email address">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select name="Subject">
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea name="Message" class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <input type="submit" class="button is-link" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
