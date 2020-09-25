@@ -32,12 +32,12 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Heartbeat
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.send('OK')
 })
 
 // send mail
-app.post('/', async (req, res) => {
+app.post('*', async (req, res) => {
   console.log(`SENDMAIL: ${JSON.stringify(req.body)}`)
   await sendmail(req.body)
   res.redirect(MAIL_REDIRECT)
