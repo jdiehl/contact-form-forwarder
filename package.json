@@ -5,7 +5,8 @@
   "author": "Jonathan Diehl",
   "license": "MIT",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "docker": "docker build -t jdiehl/contact-form-forwarder .; docker push jdiehl/contact-form-forwarder"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
